@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Stats = () => {
+const Navbar = () => {
   return (
     <div>
 
         <h1>
-            stats component
+            navbar
         </h1>
       
     </div>
   )
 }
 
-export default Stats
+export default Navbar
