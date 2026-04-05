@@ -10,7 +10,9 @@ const Navbar = () => {
                     <div className="row">
 
                         <div className="col">
-                            <img src="media/image/logo.svg" style={{ width: "30%" }} alt="logo" />
+                            <Link to={"/"}>
+                                <img src="media/image/logo.svg" style={{ width: "30%" }} alt="logo" />
+                            </Link>
                         </div>
 
                         <div className="col">
@@ -18,6 +20,10 @@ const Navbar = () => {
                                 <li className="nav-item ">
                                     <Link to={'/signup'} className="nav-link active text-muted mx-2" >signup</Link>
                                 </li>
+                                <li className="nav-item">
+                                    <Link to={"/about"} className="nav-link active text-muted  mx-2" > About </Link>
+                                </li>
+
                                 <li className="nav-item">
                                     <Link to={"/product"} className="nav-link active text-muted  mx-2"  > product </Link>
                                 </li>
@@ -27,6 +33,7 @@ const Navbar = () => {
                                 <li className="nav-item">
                                     <Link to={"/pricing"} className="nav-link active text-muted  mx-2" > pricing </Link>
                                 </li>
+
 
 
                             </ul>
