@@ -8,9 +8,13 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings").then((res) => {
+    axios.get("http://localhost:3002/allholding", {
+  headers: {
+    Authorization: `Bearer ${localStorage.getItem("token")}`
+  }
+}).then((res) => {
       // console.log(res.data);
-      setAllHoldings(res.data);
+      setAllHoldings(res.data); 
     });
   }, []);
 
@@ -27,22 +31,6 @@ const Holdings = () => {
       },
     ],
   };
-
-  // export const data = {
-  //   labels,
-  //   datasets: [
-  // {
-  //   label: 'Dataset 1',
-  //   data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-  //   backgroundColor: 'rgba(255, 99, 132, 0.5)',
-  // },
-  //     {
-  //       label: 'Dataset 2',
-  //       data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-  //       backgroundColor: 'rgba(53, 162, 235, 0.5)',
-  //     },
-  //   ],
-  // };
 
   return (
     <>
