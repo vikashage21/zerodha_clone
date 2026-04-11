@@ -12,7 +12,7 @@ Node.js
 Express.js
 🔹 Database
 MongoDB
-``js
+```js
 📂 Folder Structure
 .
 ├── about/
@@ -52,7 +52,7 @@ MongoDB
 ├── Footer.js
 ├── OpenAccount.js
 
-``
+```
 ⚙️ Project Structure Overview
 Frontend (Landing Page)
 → Static pages like Home, About, Pricing, Product, Signup
