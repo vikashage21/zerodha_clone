@@ -12,6 +12,7 @@ Node.js
 Express.js
 🔹 Database
 MongoDB
+``js
 📂 Folder Structure
 .
 ├── about/
@@ -50,6 +51,8 @@ MongoDB
 │
 ├── Footer.js
 ├── OpenAccount.js
+
+``
 ⚙️ Project Structure Overview
 Frontend (Landing Page)
 → Static pages like Home, About, Pricing, Product, Signup
@@ -74,7 +77,7 @@ User redirected to Dashboard
 Dashboard fetches protected data using token
 🛠️ Installation & Setup
 1️⃣ Clone Repository
-git clone https://github.com/your-username/zerodha_clone.git
+git clone https://github.com/viakshage21/zerodha_clone.git
 cd zerodha_clone
 2️⃣ Backend Setup
 cd backend
