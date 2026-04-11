@@ -12,6 +12,7 @@ import ProductPage from './landing_page/product/ProductPage';
 import Navbar from './landing_page/Navbar';
 import { Footer } from './landing_page/Footer';
 import AboutPage from './landing_page/about/AboutPage';
+// import Login from './landing_page/login/login';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,20 +28,16 @@ root.render(
       <Route path='/product' element={<ProductPage />}></Route>
       <Route path='/pricing' element={<PricingPage />}></Route>
       <Route path='/support' element={<SupportPage />}></Route>
+      {/* <Route path='/login' element={<Login />}></Route> */}
       <Route path='*' element={
 
         <div className='container text-center'>
-        <h1 className='fs-2 mt-5 p-5'>  404 page not found</h1>
+          <h1 className='fs-2 mt-5 p-5'>  404 page not found</h1>
         </div>
       }></Route>
 
-
-
-
-
-
     </Routes>
-<Footer/>
+    <Footer />
 
   </BrowserRouter>
 
